@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Margens elementos inline</title>
+    <style>
+        p {
+            border: 1px solid black;
+        }
+
+        .especial > strong {
+            margin-top: 3000px;
+            margin-bottom: 5400px;
+            margin-left: 150px;
+            margin-right: 280px;
+        }
+    </style>
+</head>
+<body>
+    <!-- primeiro parégrafo -->
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Distinctio aliquid officiis corrupti eum harum dicta? 
+        Esse non distinctio id assumenda omnis. 
+        Fugiat repudiandae in deleniti explicabo veritatis aut ducimus amet.
+    </p>
+    <!-- segundo parágrfo -->
+    <p class="especial">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Distinctio aliquid<strong>corrupti eum harum</strong>dicta? 
+        Esse non distinctio id assumenda omnis. 
+        Fugiat repudiandae in deleniti explicabo veritatis aut ducimus amet.
+    </p>
+    <!-- terceiro parágrofo -->
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Distinctio aliquid officiis corrupti eum harum dicta? 
+        Esse non distinctio id assumenda omnis. 
+        Fugiat repudiandae in deleniti explicabo veritatis aut ducimus amet.
+    </p>
+</body>
+</html>

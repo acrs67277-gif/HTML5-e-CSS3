@@ -5,75 +5,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Criação de sites com HTML e CSS do Paulo</title>
     <style rel="stylesheet">
-        body {
-            font: 18px/1.4 arial, sans-serif;
-            background: #ddd;
-            color: #333;
-        }
-
-        .tudo {
-            width: 100%;
-            max-width: 960px;
-            margin: auto;
-            background: #fff;
-        }
-
-        .topo {
-            width: 100%;
-            line-height: 1;
-            padding: 1px 20px 10px 20px;
-        }
-
-        .topo h1 {
-            font-size: 36px;
-            margin: 4px 0 2px 0;
-            text-align: right;
-        }
-
-        .topo a {
-            color: #900;
-            text-decoration: none;
-        }
-
-        .topo h2 {
-            font-size: 20px;
-            margin: 2px 0 4px 0;
-            text-align: right;
-        }
-
-        nav > ul {
-            width: 100%;
-            background: #900;
+        * {
             margin: 0;
             padding: 0;
         }
 
-        .topo ul li {
-            list-style: none;
-            display: inline;
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            color: #333;
+            font-size: 15px;
         }
 
-        .topo ul li a {
-            float: left;
-            text-decoration: none;
-            text-transform: uppercase;
+        .tudo {
+            width: 900px;
+            margin: 0 auto;
+        }
+
+        header {
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+
+        hgroup {
             text-align: center;
-            border-right: 1px solid #fff;
-            padding: 10px 20px;
+        }
+
+        hgroup > h1, h2 {
+           color: #ff00dd;
+        }
+
+        nav > ul, a {
+            background-color: #333;
             color: #fff;
-            background: #900;
-            font-size: 14px;
-            font-weight: bold;
+            list-style: none;
+            text-decoration: none;
+            display: flex;
+            justify-content: center;
+            padding: 9px;
+            box-sizing: border-box;
+        }   
+
+        nav >  ul, li, a.corrente:hover {
+            background-color: #f2f2f2;
+            color: #ff0000;
+            padding: 9px;
         }
 
-        .topo ul li:last-child a {
-            border: none;
+        .home {
+            display:flex;
+            gap: 10px;
         }
 
-        .topo ul li a:hover {
-            color: #900;
-            background: #ccc;
-        }
     </style>
 </head>
 <body class="home">
@@ -87,8 +69,8 @@
             <ul>
                 <li><a class="corrente" href="home.html">Home</a></li>
                 <li><a href="portfolio.html">Portfólio</a></li>
-                <li><a href="artigos-html.html">Artigos HTML</a></li>
-                <li><a href="artigos-css.html">Artigos CSS</a></li>
+                <li><a href="artigos-html.html">HTML</a></li>
+                <li><a href="artigos-css.html">CSS</a></li>
                 <li><a href="contato.html">Contact</a></li>
                 <div class="clear"></div>
             </ul>
@@ -96,7 +78,7 @@
     </header>
     </div>
     <footer>
-        <!-- Conteúdo do rodapé do site -->
+       
     </footer>
 </body>
 </html>
